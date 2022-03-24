@@ -203,7 +203,7 @@ public class QuestionActivity extends AppCompatActivity {
         RadioButton r1 = findViewById(R.id.value1);
         RadioButton r2 = findViewById(R.id.value2);
         RadioButton r3 = findViewById(R.id.value3);
-        j = rand.nextInt(5);
+
 
         StorageReference nstorageReference;
         nstorageReference = FirebaseStorage.getInstance().getReference().child(lq.get(i).image.toString());
@@ -228,33 +228,27 @@ public class QuestionActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        switch (j) {
-            case 0:
-                r1.setText(lq.get(docI).Truevalue);
-                r2.setText(lq.get(docI).falsevalue3);
-                r3.setText(lq.get(docI).falsevalue1);
-                break;
-
-            case 2:
+        j = rand.nextInt(3);
+        if(j==0) {
+            r1.setText(lq.get(docI).Truevalue);
+            r2.setText(lq.get(docI).falsevalue3);
+            r3.setText(lq.get(docI).falsevalue1);
+        }
+        else if(j==1){
                 r1.setText(lq.get(docI).falsevalue4);
                 r2.setText(lq.get(docI).Truevalue);
                 r3.setText(lq.get(docI).falsevalue2);
-                break;
-
-            case 3:
-                r3.setText(lq.get(docI).falsevalue3);
-                r1.setText(lq.get(docI).falsevalue1);
-                r2.setText(lq.get(docI).Truevalue);
-                break;
-
-            case 1:
-                r3.setText(lq.get(docI).falsevalue3);
-                r1.setText(lq.get(docI).falsevalue1);
-                r2.setText(lq.get(docI).Truevalue);
-                break;
+        }else{
+            r1.setText(lq.get(docI).falsevalue1);
+            r2.setText(lq.get(docI).falsevalue2);
+            r3.setText(lq.get(docI).Truevalue);
         }
 
-    }
+
+
+
+        }
+
 
 
     private void reloadQuestion(){
