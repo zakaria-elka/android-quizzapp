@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity"
+    android:background="@color/pal">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showusername"
+        android:textColor="@color/white"
+        android:text=" "
+        android:textSize="17sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginLeft="10sp"
+        android:background="@color/black"
+        />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:text="Log out"
+        android:layout_marginLeft="290sp"
+        android:textColor="@color/purple_200"
+        android:textSize="18sp"
+        android:background="#0000"
+
+        />
+
+
+
+
+
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="130sp"
+    android:background="@drawable/shadow2"
+    android:layout_marginBottom="500sp"
+    android:layout_marginRight="20sp"
+    android:layout_marginLeft="20sp"
+    android:paddingTop="20sp"
+    android:paddingBottom="20sp"
+
+
+    >
+
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:id="@+id/Qimage"
+
+        android:scaleType="fitXY"
+
+        />
+</LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="380sp"
+
+
+
+    >
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wich Country?"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:textSize="22sp"
+        android:paddingTop="10sp"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="450sp"
+        android:layout_marginBottom="150sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp"
+
+
+
+
+        >
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio"
+            android:padding="5sp"
+            >
+        <RadioButton
+            android:layout_width="200sp"
+            android:id="@+id/value1"
+            android:background="@drawable/shadow2"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginBottom="10sp"
+
+            />
+            <RadioButton
+                android:layout_width="200sp"
+                android:id="@+id/value2"
+                android:background="@drawable/shadow2"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginBottom="10sp"
+                />
+            <RadioButton
+                android:layout_width="200sp"
+                android:id="@+id/value3"
+                android:background="@drawable/shadow2"
+                android:layout_height="wrap_content"
+
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:layout_marginBottom="10sp"
+                />
+
+
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100sp"
+        android:layout_marginTop="600sp"
+        android:gravity="center"
+
+        >
+        <Button
+            android:layout_width="200sp"
+            android:id="@+id/nextbtn"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="20sp"
+
+            />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
